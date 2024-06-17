@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/formIMC">
+
+    <fragment
+        android:id="@+id/formIMC"
+        android:name="com.task.calculadoradeimc.FormIMC"
+        android:label="fragment_form_i_m_c"
+        tools:layout="@layout/fragment_form_i_m_c" >
+        <action
+            android:id="@+id/action_formIMC_to_informationsFragment"
+            app:destination="@id/informationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/informationsFragment"
+        android:name="com.task.calculadoradeimc.InformationsFragment"
+        android:label="fragment_informations"
+        tools:layout="@layout/fragment_informations" />
+</navigation>

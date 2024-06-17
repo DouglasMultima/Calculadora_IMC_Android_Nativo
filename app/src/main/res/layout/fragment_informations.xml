@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Container principal com margens -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Nome -->
+        <TextView
+            android:id="@+id/textViewNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="8dp"
+            />
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Douglas"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewNome"
+            app:layout_constraintTop_toTopOf="@+id/textViewNome"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <!-- Idade -->
+        <TextView
+            android:id="@+id/textViewIdade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Idade:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nome"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/idade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="21"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewIdade"
+            app:layout_constraintTop_toTopOf="@+id/textViewIdade"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <!-- Altura -->
+        <TextView
+            android:id="@+id/textViewAltura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Altura:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/idade"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/altura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="1,70"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewAltura"
+            app:layout_constraintTop_toTopOf="@+id/textViewAltura"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <!-- Peso -->
+        <TextView
+            android:id="@+id/textViewPeso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Peso:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/altura"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/peso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="89kg"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewPeso"
+            app:layout_constraintTop_toTopOf="@+id/textViewPeso"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <!-- Resultado do IMC -->
+        <TextView
+            android:id="@+id/textViewResultadoIMC"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Classificação do IMC:"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/peso"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            />
+
+        <TextView
+            android:id="@+id/result_imc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Resultado: IMC"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewResultadoIMC"
+            app:layout_constraintTop_toTopOf="@+id/textViewResultadoIMC"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+        <TextView
+            android:id="@+id/textViewResultadoIMC1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resultado do IMC:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewResultadoIMC" />
+
+        <TextView
+            android:id="@+id/result_imc_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Valor do IMC: IMC"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/textViewResultadoIMC1"
+            app:layout_constraintTop_toTopOf="@+id/textViewResultadoIMC1"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
